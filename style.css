@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mons;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mons;
+    src: url(/Montserrat-VariableFont_wght.ttf);
+}
+.time-management{
+    width: 100%;
+    height: 35vw;
+    background-color: aquamarine;
+    background-image: url(/assets/img1.jpg);
+    background-size: cover;
+}
+
+.timing-head{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    color: #fff;
+    padding-top: 2vh;
+
+    padding-top: 1.5vh;
+    padding-left: 3vh;
+    font-size: 3vh;
+}
+
+.timing-head h2{
+    font-weight: 600;
+}
+
+.time-cards{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    /* margin-top: 3vh; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 4vh;
+}
+
+.inner-cards{
+    height: 17vw;
+    width: 19vw;
+    /* background-color: white; */
+    padding-top: 2vh;
+    padding-left: 1vh;
+    border-radius: 12px;
+    border: 1px solid gray;
+    color: white;
+    backdrop-filter: blur(10px);
+    margin-top: 4vh;
+}
+
+.inner-cards h3{
+    font-size: 2.7vh;
+    font-weight: 600;
+    margin-left: 4vh;
+    color: #007bff;
+}
+
+.inner-cards p{
+    margin-top: 4vh;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 0 2vh;
+}
+
+@media(min-width:1px) and (max-width:425px){
+
+   .time-management{
+    width: 100%;
+    height: 160vh;
+    background-color: aqua;
+   }
+
+
+   .time-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+  }
+
+   .inner-cards{
+    width: 40vh;
+    height: 35vh;
+    padding-bottom: 1vh;
+    border: 1px solid gray;
+   }
+}
